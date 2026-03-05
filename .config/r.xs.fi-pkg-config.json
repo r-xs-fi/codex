@@ -1,0 +1,16 @@
+{
+	"supply_chain_descriptor": "npm-package:@openai/codex",
+	"needs_privileged_because": "needs access to host files with varying users",
+	"usage_examples": [
+		{
+			"title": "Start session",
+			"cmd": "",
+			"example_output": "╭─────────────────────────────────────────────╮\n│ >_ OpenAI Codex (v0.110.0)                  │\n│                                             │\n│ model:     gpt-5.3-codex   /model to change │\n│ directory: /workspace                       │\n╰─────────────────────────────────────────────╯",
+			"docker_opts": ["--volume=$(pwd):/workspace", "--volume=~/.codex:/root/.codex"]
+		}
+	],
+	"not_building_for_platforms_because": {
+		"linux/riscv64": "Upstream prebuild executable not available.",
+		"linux/arm/v7": "Upstream prebuild executable not available."
+	}
+}

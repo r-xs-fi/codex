@@ -1,0 +1,12 @@
+{
+	"for_description_of_this_file_see": "https://github.com/function61/turbobob",
+	"version_major": 1,
+	"project_name": "Codex",
+	"meta": {
+		"description": "Container image for Codex - Lightweight coding agent that runs in your terminal",
+		"website": "https://openai.com/codex/"
+	},
+	"docker_images": [
+		{ "image": "ghcr.io/r-xs-fi/codex", "platforms": ["linux/amd64", "linux/arm64"], "tag_latest": true }
+	]
+}
